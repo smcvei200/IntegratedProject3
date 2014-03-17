@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\FollowMouseScript.cs" />
      <Compile Include="Assets\Scripts\LoadLevelScript.cs" />
      <Compile Include="Assets\Scripts\MovePlayerScript.cs" />
+     <Compile Include="Assets\Scripts\ScoreScript.cs" />
      <Compile Include="Assets\Scripts\SeagullChat.cs" />
      <Compile Include="Assets\Scripts\SelectLevelScript.cs" />
   </ItemGroup>

@@ -56,6 +56,8 @@ public class ActionScript : MonoBehaviour {
 	private float runtime = 0f;
 	private bool go = false;
 	
+	Color newColor = new Color(0,0,255, 0.7f);
+	
 	
 	// Use this for initialization
 	void Start () {
@@ -63,13 +65,18 @@ public class ActionScript : MonoBehaviour {
 		bigChat.renderer.enabled = false;
 		Hello.renderer.enabled = false;
 		choice1.renderer.enabled = false;
+		
 		choice2.renderer.enabled = false;
 		choice3.renderer.enabled = false;
 		answer1.renderer.enabled = false;
 		answer2.renderer.enabled = false;
 		answer3.renderer.enabled = false;
 		
-		
+		weeChat.renderer.material.color = newColor;
+		bigChat.renderer.material.color = newColor;
+		choice1.renderer.material.color = newColor;
+		choice2.renderer.material.color = newColor;
+		choice3.renderer.material.color = newColor;
 	}
 	
 	// Update is called once per frame
@@ -124,6 +131,7 @@ public class ActionScript : MonoBehaviour {
 				answer2.renderer.enabled = true;
 				answer3.renderer.enabled = true;
 				choice1.renderer.enabled = true;
+				
 				choice2.renderer.enabled = true;
 				choice3.renderer.enabled = true;
 				option1.text = a1;
@@ -140,8 +148,6 @@ public class ActionScript : MonoBehaviour {
 				
 			}
 		
-			
-			
 		}
 		 if((gameObject.tag == "choice1")&&(choice1.renderer.enabled == true))
 			
@@ -149,6 +155,7 @@ public class ActionScript : MonoBehaviour {
 				
 			if(option1.text.ToString() == a1)
 			{
+				
 				option1.text = a2;
 				option2.text = b2;
 				option3.text = c2;
@@ -168,10 +175,9 @@ public class ActionScript : MonoBehaviour {
 				option1.text = a3;				
 				option2.text = b3;				
 				option3.text = c3;
+				option3.characterSize = 0.8f;
 				question.text = q4;
-				question.characterSize = 1.0f;
-				
-				
+				question.characterSize = 1.0f;	
 				
 			}
 			else if(option1.text.ToString () == a3)
@@ -183,11 +189,7 @@ public class ActionScript : MonoBehaviour {
 				option3.text = c4;
 				question.text = q5;
 				
-			}
-			
-			
-			
-				
+			}				
 		
 		}
 		if(gameObject.tag == "choice2")
@@ -208,10 +210,12 @@ public class ActionScript : MonoBehaviour {
 		TextMesh option3 = (TextMesh)answer3.GetComponent(typeof(TextMesh));
 		TextMesh question = (TextMesh)Hello.GetComponent(typeof(TextMesh));
 		
-		if((gameObject.tag == "answer1")&&(choice1.renderer.enabled == true))
+		if((gameObject.tag == "answer1")&&(choice1.renderer.enabled == true)&&(!GameObject.Find("One shot audio")))
 		{
+			renderer.material.color = Color.red;
 			if(option1.text.ToString() == a1)
 			{
+				
 				AudioSource.PlayClipAtPoint(whatsYourName, Camera.main.transform.position);
 			}
 			else if(option1.text.ToString() == a2)
@@ -228,8 +232,9 @@ public class ActionScript : MonoBehaviour {
 			}
 		}
 		
-		else if((gameObject.tag == "answer2")&&(choice2.renderer.enabled == true))
+		else if((gameObject.tag == "answer2")&&(choice2.renderer.enabled == true)&&(!GameObject.Find("One shot audio")))
 			{
+			renderer.material.color = Color.red;
 			if(option2.text.ToString() == b1)
 			{
 				AudioSource.PlayClipAtPoint(whatsThat, Camera.main.transform.position);
@@ -248,8 +253,9 @@ public class ActionScript : MonoBehaviour {
 			}
 		}
 		
-		else if((gameObject.tag == "answer3")&&(choice3.renderer.enabled == true))
+		else if((gameObject.tag == "answer3")&&(choice3.renderer.enabled == true)&&(!GameObject.Find("One shot audio")))
 		{
+			renderer.material.color = Color.red;
 			if(option3.text.ToString() == c1)
 			{
 				AudioSource.PlayClipAtPoint(giveMe, Camera.main.transform.position);
@@ -271,5 +277,21 @@ public class ActionScript : MonoBehaviour {
 		
 	}
 	
+	void OnMouseExit()
+	{
+		if((gameObject.tag == "answer1")&&(choice1.renderer.enabled == true))
+		{
+			renderer.material.color = Color.yellow;
+		}
+		else if((gameObject.tag == "answer2")&&(choice1.renderer.enabled == true))
+		{
+			renderer.material.color = Color.yellow;
+		}
+		else if((gameObject.tag == "answer3")&&(choice1.renderer.enabled == true))
+		{
+			renderer.material.color = Color.yellow;
+		}
+		
+	}
 
 }
