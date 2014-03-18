@@ -22,9 +22,9 @@ public class ScoreScript : MonoBehaviour {
 	void Update () {
 		if(go == true)
 		{				
-				//float newScale = Mathf.Lerp (1, 3, timer);
-				Scale = SammyHappy.transform.localScale + new Vector3(0,1f,0);
-				SammyHappy.transform.localScale = new Vector3(1, newScale, 1);
+				
+				SammyHappy.transform.localScale += new Vector3(0,1f,0);
+			
 				SammyHappy.transform.position = SammyHappy.transform.position + new Vector3(0,1,0);
 
 				go = false;
@@ -36,8 +36,10 @@ public class ScoreScript : MonoBehaviour {
 	{
 		if((gameObject.tag == "choice1"))
 		{
-			go = true;
-			
+			if(choice1.renderer.enabled == true)
+			{
+				go = true;
+			}
 		}
 		
 		

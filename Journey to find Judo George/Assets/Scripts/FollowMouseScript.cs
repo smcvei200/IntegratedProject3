@@ -15,12 +15,12 @@ public class FollowMouseScript : MonoBehaviour {
 	void Update () {
 
 		
-		if((Input.GetAxis("Mouse X") < 0)&&(Input.mousePosition.x > 0))
+		if((Input.GetAxis("Mouse X") < 0)&&(Input.mousePosition.x > 0)&&(Input.mousePosition.x < Screen.width))
 		{
 			
 			Player.transform.Rotate(0, -speed * Time.deltaTime,0);
 		}
-		if((Input.GetAxis("Mouse X") > 0)&&(Input.mousePosition.x < Screen.width)) 
+		if((Input.GetAxis("Mouse X") > 0)&&(Input.mousePosition.x < Screen.width)&&(Input.mousePosition.x > 0)) 
 		{
 			
 			Player.transform.Rotate(0,speed * Time.deltaTime, 0 );
