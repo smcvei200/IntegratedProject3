@@ -37,10 +37,10 @@
     <Reference Include="System.XML" />
 	<Reference Include="System.Core" />
 	<Reference Include="UnityEngine">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>C:/Users/Stephen/Desktop/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>C:/Users/Stephen/Desktop/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
@@ -49,7 +49,6 @@
      <Compile Include="Assets\Scripts\FollowMouseScript.cs" />
      <Compile Include="Assets\Scripts\LoadLevelScript.cs" />
      <Compile Include="Assets\Scripts\MovePlayerScript.cs" />
-     <Compile Include="Assets\Scripts\ScoreScript.cs" />
      <Compile Include="Assets\Scripts\SeagullChat.cs" />
      <Compile Include="Assets\Scripts\SelectLevelScript.cs" />
   </ItemGroup>
