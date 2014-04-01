@@ -39,8 +39,8 @@ public class ActionScript : MonoBehaviour {
 	string q7 = "Ok, see you later!";
 	string q8 = "That's not very nice!";
 	string q9 = "Don't be so rude!";
-	string q10 = "School is important!";
-	string q11 = "Your manners need improving!";
+	string q10 = "School is very \n important!";
+	string q11 = "Your manners need \n improving!";
 	
 	string a1 = "What's your name?";
 	string a2 = "I'm thinking about going!";
@@ -58,11 +58,12 @@ public class ActionScript : MonoBehaviour {
 	string c4 = "You scare me! \n I'm outta here!";
 	
 	string f1 = "Sammy really enjoyed \n his conversation \n with you!";
-	string f2 = "You could have \n been a little more polite!";
-	string f3 = "Don't think Sammy \n was very happy with you!";
+	string f2 = "You could have \n been a little more \n polite!";
+	string f3 = "Don't think Sammy \n was very happy  \n with you!";
 	
 	private float runtime = 0f;
 	private bool go = false;
+	private bool endLevel = false;
 	private bool goodScore = false;
 	private bool averageScore = false;
 	private bool badScore = false;
@@ -98,6 +99,11 @@ public class ActionScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
+		weeChat.renderer.material.color = choiceColor;
+		bigChat.renderer.material.color = choiceColor;
+		choice1.renderer.material.color = choiceColor;
+		choice2.renderer.material.color = choiceColor;
+		choice3.renderer.material.color = choiceColor;
 		
 		
 		if(goodScore == true)
@@ -143,7 +149,28 @@ public class ActionScript : MonoBehaviour {
 				go = false;
 			}
 		}
+		if(SammyHappy.transform.localScale.y >= 3)
+		{
+			splashScreen.renderer.material.color = goodColor;
+		}
+		else if((SammyHappy.transform.localScale.y>= 1)&&(SammyHappy.transform.localScale.y<3))
+		{
+			splashScreen.renderer.material.color = averageColor;
+		}
+		else if(SammyHappy.transform.localScale.y <1)
+		{
+			splashScreen.renderer.material.color = badColor;
+		}
 		
+		if(endLevel == true)
+		{
+		
+			runtime += Time.deltaTime;
+			if(runtime > 10f)
+			{
+				Application.LoadLevel ("LevelSelect");
+			}
+		}
 	}
 
 	void OnMouseDown()
@@ -188,43 +215,54 @@ public class ActionScript : MonoBehaviour {
 			{
 				if(SammyHappy.transform.localScale.y >= 3)
 				{
-					
+					splashScreen.transform.localScale += new Vector3(2,0,0);
 					splashScreen.renderer.enabled = true;
 					finish.renderer.enabled = true;
 					finish.text = f1;
+					endLevel = true;
 				}
 				else if((SammyHappy.transform.localScale.y>= 1)&&(SammyHappy.transform.localScale.y<3))
 				{
+					splashScreen.transform.localScale += new Vector3(2,0,0);
 					splashScreen.renderer.enabled = true;
 					finish.renderer.enabled = true;
 					finish.text = f2;
+					endLevel = true;
 				}
 				else if(SammyHappy.transform.localScale.y <1)
 				{
+					splashScreen.transform.localScale += new Vector3(2,0,0);
 					splashScreen.renderer.enabled = true;
 					finish.renderer.enabled = true;
 					finish.text = f3;
+					endLevel = true;
 				}
 			}
 			else if(question.text.ToString () == q7)
 			{
 				if(SammyHappy.transform.localScale.y >= 3)
 				{
+					splashScreen.transform.localScale += new Vector3(2,0,0);
 					splashScreen.renderer.enabled = true;
 					finish.renderer.enabled = true;
 					finish.text = f1;
+					endLevel = true;
 				}
 				else if((SammyHappy.transform.localScale.y>= 1)&&(SammyHappy.transform.localScale.y<3))
 				{
+					splashScreen.transform.localScale += new Vector3(2,0,0);
 					splashScreen.renderer.enabled = true;
 					finish.renderer.enabled = true;
 					finish.text = f2;
+					endLevel = true;
 				}
 				else if(SammyHappy.transform.localScale.y <1)
 				{
+					splashScreen.transform.localScale += new Vector3(2,0,0);
 					splashScreen.renderer.enabled = true;
 					finish.renderer.enabled = true;
 					finish.text = f3;
+					endLevel = true;
 				}
 			}
 			
@@ -233,6 +271,7 @@ public class ActionScript : MonoBehaviour {
 				runtime = 0;
 				go = true;
 				question.text = q3;
+				question.characterSize = 0.7f;
 				
 			}
 			
@@ -255,28 +294,34 @@ public class ActionScript : MonoBehaviour {
 				
 				if(SammyHappy.transform.localScale.y >= 3)
 				{
+					splashScreen.transform.localScale += new Vector3(2,0,0);
 					splashScreen.renderer.enabled = true;
 					finish.renderer.enabled = true;
 					finish.text = f1;
+					endLevel = true;
 				}
 				else if((SammyHappy.transform.localScale.y>= 1)&&(SammyHappy.transform.localScale.y<3))
 				{
+					splashScreen.transform.localScale += new Vector3(2,0,0);
 					splashScreen.renderer.enabled = true;
 					finish.renderer.enabled = true;
 					finish.text = f2;
+					endLevel = true;
 				}
 				else if(SammyHappy.transform.localScale.y <1)
 				{
+					splashScreen.transform.localScale += new Vector3(2,0,0);
 					splashScreen.renderer.enabled = true;
 					finish.renderer.enabled = true;
 					finish.text = f3;
+					endLevel = true;
 				}
 					
 				
 			}
 		
 		}
-		 if((gameObject.tag == "choice1")&&(choice1.renderer.enabled == true))
+		 if(((gameObject.tag == "choice1")||(gameObject.tag=="answer1"))&&(choice1.renderer.enabled == true))
 			
 		{			
 				
@@ -338,7 +383,7 @@ public class ActionScript : MonoBehaviour {
 			}
 		
 		}
-		if((gameObject.tag == "choice2")&&(choice2.renderer.enabled == true))
+		if(((gameObject.tag == "choice2")||(gameObject.tag == "answer2"))&&(choice2.renderer.enabled == true))
 		{
 			if(option2.text.ToString() == b1)
 			{
@@ -352,6 +397,7 @@ public class ActionScript : MonoBehaviour {
 				option2.text = b2;
 				option3.text = c2;
 				question.text = q3;
+				question.characterSize = 0.7f;
 				
 			}
 			else if(option2.text.ToString() == b2)
@@ -394,7 +440,7 @@ public class ActionScript : MonoBehaviour {
 				choice3.renderer.enabled = false;
 			}
 		}
-		if((gameObject.tag == "choice3")&&(choice3.renderer.enabled == true))
+		if(((gameObject.tag == "choice3")||(gameObject.tag == "answer3"))&&(choice3.renderer.enabled == true))
 		{
 			if(option3.text.ToString() == c1)
 			{

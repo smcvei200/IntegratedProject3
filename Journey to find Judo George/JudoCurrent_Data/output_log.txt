@@ -1,0 +1,71 @@
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [nvd3dum.dll 9.18.13.1141]
+    Renderer: NVIDIA GeForce GT 620
+    Vendor:   NVIDIA
+    VRAM:     972 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 DF24=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Initialize engine version: 3.5.7f6
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Stephen\Documents\GitHub\IntegratedProject3\Journey to find Judo George\JudoCurrent_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Stephen\Documents\GitHub\IntegratedProject3\Journey to find Judo George\JudoCurrent_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Stephen\Documents\GitHub\IntegratedProject3\Journey to find Judo George\JudoCurrent_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Stephen\Documents\GitHub\IntegratedProject3\Journey to find Judo George\JudoCurrent_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+- Completed reload, in  0.056 seconds
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 103. Operation took 3.354530 ms.
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 144. Operation took 1.517407 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 104. Operation took 1.434057 ms.
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 199. Operation took 2.846032 ms.
+Skipped rendering frame because GfxDevice is in invalid state (device lost)
+ 
+(Filename: C:/BuildAgent/work/14194e8ce88cdf47/Runtime/Misc/Player.cpp Line: 1613)
+
+HandleD3DDeviceLost
+  HandleD3DDeviceLost: still lost
+Skipped rendering frame because GfxDevice is in invalid state (device lost)
+ 
+(Filename: C:/BuildAgent/work/14194e8ce88cdf47/Runtime/Misc/Player.cpp Line: 1613)
+
+HandleD3DDeviceLost
+  HandleD3DDeviceLost: still lost
+Skipped rendering frame because GfxDevice is in invalid state (device lost)
+ 
+(Filename: C:/BuildAgent/work/14194e8ce88cdf47/Runtime/Misc/Player.cpp Line: 1613)
+
+HandleD3DDeviceLost
+  HandleD3DDeviceLost: still lost
+Skipped rendering frame because GfxDevice is in invalid state (device lost)
+ 
+(Filename: C:/BuildAgent/work/14194e8ce88cdf47/Runtime/Misc/Player.cpp Line: 1613)
+
+HandleD3DDeviceLost
+  HandleD3DDeviceLost: still lost
+Skipped rendering frame because GfxDevice is in invalid state (device lost)
+ 
+(Filename: C:/BuildAgent/work/14194e8ce88cdf47/Runtime/Misc/Player.cpp Line: 1613)
+
+HandleD3DDeviceLost
+  HandleD3DDeviceLost: still lost
+Skipped rendering frame because GfxDevice is in invalid state (device lost)
+ 
+(Filename: C:/BuildAgent/work/14194e8ce88cdf47/Runtime/Misc/Player.cpp Line: 1613)
+
+HandleD3DDeviceLost
+  HandleD3DDeviceLost: still lost
+Skipped rendering frame because GfxDevice is in invalid state (device lost)
+ 
+(Filename: C:/BuildAgent/work/14194e8ce88cdf47/Runtime/Misc/Player.cpp Line: 1613)
+
+HandleD3DDeviceLost
+  HandleD3DDeviceLost: still lost

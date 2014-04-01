@@ -1,9 +1,9 @@
 using UnityEngine;
 using System.Collections;
 
-public class DriveBus : MonoBehaviour {
+public class DriveBusScript: MonoBehaviour {
 	
-	public int speed = 20;
+	public int speed = 5;
 	public Transform Bus;
 	// Use this for initialization
 	public void Update(){	
@@ -14,12 +14,12 @@ public class DriveBus : MonoBehaviour {
 			transform.Translate(Vector3.up* speed * Time.deltaTime);
 			if(Input.GetKey(KeyCode.LeftArrow))
 			{
-				transform.Rotate(0,0, speed* Time.deltaTime);
+				transform.Rotate(0,0, speed* Time.deltaTime*30);
 			}
 			
 			if(Input.GetKey(KeyCode.RightArrow))
 			{
-				transform.Rotate (0,0,-speed* Time.deltaTime);
+				transform.Rotate (0,0,-speed* Time.deltaTime*30);
 			}
 		}
 		
@@ -28,12 +28,12 @@ public class DriveBus : MonoBehaviour {
 			transform.Translate(Vector3.down*speed * Time.deltaTime);
 			if(Input.GetKey(KeyCode.LeftArrow))
 			{
-				transform.Rotate(0,0, -speed* Time.deltaTime);
+				transform.Rotate(0,0, -speed* Time.deltaTime*30);
 			}
 			
 			if(Input.GetKey(KeyCode.RightArrow))
 			{
-				transform.Rotate (0,0,speed* Time.deltaTime);
+				transform.Rotate (0,0,speed* Time.deltaTime*30);
 			}
 		}
 		

@@ -20,6 +20,6 @@ public class LoadLevelScript : MonoBehaviour {
 	
 	public void OnMouseDown(){
 	
-		Application.LoadLevel(1);
+		Application.LoadLevel("LevelSelect");
 	}
 }
