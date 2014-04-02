@@ -10,20 +10,17 @@ desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Input initialized.
 Initialize engine version: 3.5.7f6
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\Stephen\Desktop\Journey to find Judo George\JudoGeorgeForPlayTest_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\Stephen\Desktop\Journey to find Judo George\JudoGeorgeForPlayTest_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\Stephen\Desktop\Journey to find Judo George\JudoGeorgeForPlayTest_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\Stephen\Desktop\Journey to find Judo George\JudoGeorgeForPlayTest_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-- Completed reload, in  0.059 seconds
+Platform assembly: C:\Users\Stephen\Documents\GitHub\IntegratedProject3\Journey to find Judo George\JudoGeorgeForPlayTest_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Stephen\Documents\GitHub\IntegratedProject3\Journey to find Judo George\JudoGeorgeForPlayTest_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Stephen\Documents\GitHub\IntegratedProject3\Journey to find Judo George\JudoGeorgeForPlayTest_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Stephen\Documents\GitHub\IntegratedProject3\Journey to find Judo George\JudoGeorgeForPlayTest_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+- Completed reload, in  0.043 seconds
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 103. Operation took 2.971057 ms.
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 103. Operation took 6.021422 ms.
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 222. Operation took 2.881798 ms.
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 222. Operation took 2.805601 ms.
 Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 112. Operation took 7.356579 ms.
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 167. Operation took 2.611221 ms.
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 112. Operation took 5.457876 ms.
