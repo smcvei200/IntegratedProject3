@@ -14,13 +14,16 @@ Platform assembly: C:\Users\Stephen\Documents\GitHub\IntegratedProject3\Journey 
 Loading C:\Users\Stephen\Documents\GitHub\IntegratedProject3\Journey to find Judo George\JudoGeorgeForPlayTest_Data\Managed\UnityEngine.dll into Unity Child Domain
 Platform assembly: C:\Users\Stephen\Documents\GitHub\IntegratedProject3\Journey to find Judo George\JudoGeorgeForPlayTest_Data\Managed\Assembly-CSharp.dll (this message is harmless)
 Loading C:\Users\Stephen\Documents\GitHub\IntegratedProject3\Journey to find Judo George\JudoGeorgeForPlayTest_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-- Completed reload, in  0.043 seconds
+- Completed reload, in  0.047 seconds
+Actor::updateMassFromShapes: Compute mesh inertia tensor failed for one of the actor's mesh shapes! Please change mesh geometry or supply a tensor manually!
+ 
+(Filename: ..\..\Physics\src\NpActor.cpp Line: 134)
+
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 103. Operation took 6.021422 ms.
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 141. Operation took 5.599072 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Walk.OnTriggerEnter (UnityEngine.Collider c) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
 
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 222. Operation took 2.805601 ms.
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 112. Operation took 5.457876 ms.
